@@ -1,0 +1,143 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/habit.jpg');
+	/* background-color: grey; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+}
+
+
+#main{
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+#desc{
+	width: 40%;
+	/* border: 1px solid black; */
+	align-items: center;
+	margin: auto;
+	/* padding: 5%; */
+}
+
+#login{
+	padding-top: 2%;
+	margin-top: 6%;
+	width: 30%;
+	height: 60%;
+	background-color: white;
+	/* opacity: 0.6; */
+	margin: auto;
+	box-shadow: 2px 4px 12px 4px grey;
+	border-radius: 5px;
+}
+
+h2{
+	color: white;
+	font-size: 4.5rem;
+	font-weight: 500;
+	font-family: cursive;
+	text-transform: uppercase;
+	margin-top: 40px;
+	line-height: 30px;
+	text-align: center;
+}
+
+h1{
+	color: orange;
+	font-size: 5rem;
+	font-weight: 600;
+	font-family: cursive;
+	text-transform: uppercase;
+	margin: 10px 0px 30px 0px;
+	text-align: center;
+}
+
+h3{
+	color: orange;
+	font-size: 2rem;
+	font-family: sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#reg-button{
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+#reg-button button{
+	width: 20%;
+}
+
+#reg-button:hover{
+	opacity: 0.5;
+}
+
+form{
+	width: 100%;
+	text-align: center;
+}
+
+form input{
+	display: inline-block;
+	width: 60%;
+	padding: 10px 5px 10px 5px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+form button{
+	margin-top: 25px;
+	margin-bottom: 20px;
+	width: 20%;
+}
+
+#login p{
+	color: black;
+	font-size: 1.1rem;
+	margin-top: -12px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:600px) {
+	html{
+		font-size: 10px;
+	}
+	#main{
+		left: 0%;
+		top: 3%;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+	}
+	#login{
+		width: 90%;
+		height: auto;
+		margin-left: 4%;
+	}
+	#desc{
+		width: 90%;
+		margin-top: 0%;
+		margin-left: 4%;
+		background: rgba(0, 0, 0, 0.6);
+		margin-bottom: 20px;
+	}
+	h1{
+		color: #c91622;
+		margin-bottom: 1.5rem;
+	}
+	#reg-button{
+		margin-bottom: 1.5rem;
+	}
+}
