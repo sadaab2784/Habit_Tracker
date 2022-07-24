@@ -1,19 +1,22 @@
+// importing mongoose library
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://habit_tracker_db:HkmOQGnLVjuVC6Sz@cluster0.plarr2v.mongodb.net/habit_tracker_db?retryWrites=true&w=majority",{
+// connecting to localhost/system server
+// also tells the name of database which we are connecting to
+let MongoDB_URL="mongodb+srv://issuetracker:yArVAgxnZeI0RFlE@cluster0.in1qv.mongodb.net/codeial?retryWrites=true&w=majority";
+mongoose.connect(MongoDB_URL,{
     useNewUrlParser: true,
     // useFindAndModify: false,
     useUnifiedTopology: true
-  })
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/habit_tracker_db'); //connect to database
+  });
 
-const db = mongoose.connection;  //acquire the connection to check if its successful or not
+//connection between database and mongoose is accessed by below code
+const db = mongoose.connection;
 
+// if connection gets error
+db.on('error', console.error.bind(console, 'connection error to db:'));
 
-db.on('error',console.error.bind(console,"error connecting to db"));  //if error
-
-//db up and running
+// onces we get access to db or connection between database and mongoose gets established
 db.once('open',function(){
-    console.log("Succefully connected to mongodb");
+    console.log('Successfully connected to database');
 });
-
