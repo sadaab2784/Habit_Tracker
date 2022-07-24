@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 let MongoDB_URL="mongodb+srv://issuetracker:yArVAgxnZeI0RFlE@cluster0.in1qv.mongodb.net/codeial?retryWrites=true&w=majority";
 mongoose.connect(MongoDB_URL,{
     useNewUrlParser: true,
-    // useFindAndModify: false,
     useUnifiedTopology: true
   });
 
