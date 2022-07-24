@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-let URL = "mongodb+srv://habit_tracker_db:HkmOQGnLVjuVC6Sz@cluster0.plarr2v.mongodb.net/habit_tracker_db?retryWrites=true&w=majority"
+let URL = "mongodb+srv://habit_tracker_db:HkmOQGnLVjuVC6Sz@cluster0.plarr2v.mongodb.net/habit_tracker_db?retryWrites=true&w=majority";
 
 
 mongoose.connect(URL,{
