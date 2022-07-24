@@ -1,7 +1,7 @@
 const dotEnv = require('dotenv');
 dotEnv.config();
 const express = require('express');
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 
 const db = require('./config/mongoose');  //mongoose setup
 const session = require('express-session'); //used for session-cookie
