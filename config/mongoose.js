@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 // connecting to localhost/system server
 // also tells the name of database which we are connecting to
-let MongoDB_URL="mongodb+srv://issuetracker:yArVAgxnZeI0RFlE@cluster0.in1qv.mongodb.net/codeial?retryWrites=true&w=majority";
+let MongoDB_URL="mongodb+srv://habit_tracker_db:c0Hbu5lbNVZsSrDz@cluster0.plarr2v.mongodb.net/habit_tracker_db?retryWrites=true&w=majority";
 mongoose.connect(MongoDB_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true
