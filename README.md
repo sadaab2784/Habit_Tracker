@@ -27,7 +27,7 @@ https://habittracker2789.herokuapp.com/users/sign-in
 
 ##### Into the project directory
 
-`cd habit-tracker`
+`cd Habit_Tracker`
 
 ##### Installing NPM dependencies
 
