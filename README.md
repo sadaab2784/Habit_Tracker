@@ -1,7 +1,8 @@
 # Habit Tracker App
 > A habit tracking app that will help you to create and maintain an awesome daily and weekly routine, which is one of the most powerful tools for achieving your goals and sending your life into an upwards spiral.
 
-# Deployed Link: https://habittracker2789.herokuapp.com/users/sign-in
+# Deployed Link: 
+https://habittracker2789.herokuapp.com/users/sign-in
 
 ![Login](https://user-images.githubusercontent.com/106314415/196912691-1d43becf-4396-40e7-96a7-1e1fc33ee39e.png)
 
